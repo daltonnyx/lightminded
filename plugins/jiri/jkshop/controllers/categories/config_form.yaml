@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: jiri.jkshop::lang.categories.menu_label_single
+
+# Model Form Field configuration
+form: $/jiri/jkshop/models/category/fields.yaml
+
+# Model Class name
+modelClass: Jiri\JKShop\Models\Category
+
+# Default redirect location
+defaultRedirect: jiri/jkshop/categories
+
+# Create page
+create: 
+    title: jiri.jkshop::lang.categories.create_category
+    redirect: jiri/jkshop/categories/update/:id
+    redirectClose: jiri/jkshop/categories
+
+# Update page
+update:
+    title: jiri.jkshop::lang.categories.edit_category
+    redirect: jiri/jkshop/categories
+    redirectClose: jiri/jkshop/categories
+
+# Preview page
+preview:
+    title: jiri.jkshop::lang.categories.preview_category

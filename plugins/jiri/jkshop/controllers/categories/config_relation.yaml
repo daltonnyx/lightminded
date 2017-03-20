@@ -1,0 +1,12 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+sales:
+    label: jiri.jkshop::lang.categories.sales_percent
+    view:
+        list: $/jiri/jkshop/models/categoryusersale/columns.yaml
+        toolbarButtons: create|delete
+    manage:
+        form: $/jiri/jkshop/models/categoryusersale/fields.yaml
+        recordsPerPage: 10

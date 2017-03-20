@@ -1,0 +1,45 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: jiri.jkshop::lang.orderstatuses.id
+        searchable: true
+        
+    title:
+        label: jiri.jkshop::lang.orderstatuses.title
+        type: partial
+        path: ~/plugins/jiri/jkshop/models/orderstatus/_title_column.htm
+        searchable: true
+        
+    active:
+        label: jiri.jkshop::lang.orderstatuses.active
+        type: switch
+        
+    disallow_for_gateway:
+        label: jiri.jkshop::lang.orderstatuses.disallow_for_gateway
+        type: switch
+        
+    qty_increase_back:
+        label: jiri.jkshop::lang.orderstatuses.qty_increase_back
+        type: switch
+        
+    qty_decrease:
+        label: jiri.jkshop::lang.orderstatuses.qty_decrease
+        type: switch
+        
+    send_email_to_customer:
+        label: jiri.jkshop::lang.orderstatuses.send_email_to_customer
+        type: switch
+        
+    attach_invoice_pdf_to_email:
+        label: jiri.jkshop::lang.orderstatuses.attach_invoice_pdf_to_email
+        type: switch
+        
+    mail_template:
+        label: jiri.jkshop::lang.orderstatuses.mail_template
+        relation: mail_template
+        select: subject
+        
+        

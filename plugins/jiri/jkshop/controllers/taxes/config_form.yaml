@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: jiri.jkshop::lang.taxes.menu_label_single
+
+# Model Form Field configuration
+form: $/jiri/jkshop/models/tax/fields.yaml
+
+# Model Class name
+modelClass: Jiri\JKShop\Models\Tax
+
+# Default redirect location
+defaultRedirect: jiri/jkshop/taxes
+
+# Create page
+create:
+    title: jiri.jkshop::lang.taxes.create
+    redirect: jiri/jkshop/taxes/update/:id
+    redirectClose: jiri/jkshop/taxes
+
+# Update page
+update:
+    title: jiri.jkshop::lang.taxes.edit
+    redirect: jiri/jkshop/taxes
+    redirectClose: jiri/jkshop/taxes
+
+# Preview page
+preview:
+    title: jiri.jkshop::lang.taxes.preview

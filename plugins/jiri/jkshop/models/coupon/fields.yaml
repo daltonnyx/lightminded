@@ -1,0 +1,92 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    active:
+        label: jiri.jkshop::lang.coupons.active
+        type: switch
+        span: full
+        default: true
+
+    code:
+        label: jiri.jkshop::lang.coupons.code
+        comment: jiri.jkshop::lang.coupons.code_comment
+        span: full
+        disabled: true
+        
+    valid_from:
+        label: jiri.jkshop::lang.coupons.valid_from
+        comment: jiri.jkshop::lang.coupons.valid_to_comment
+        span: auto
+        type: datepicker
+        mode: datetime
+        
+    valid_to:
+        label: jiri.jkshop::lang.coupons.valid_to
+        comment: jiri.jkshop::lang.coupons.valid_to_comment
+        span: auto
+        type: datepicker
+        mode: datetime
+        
+    count:
+        label: jiri.jkshop::lang.coupons.count
+        comment: jiri.jkshop::lang.coupons.count_comment
+        type: number
+        span: auto
+        default: 0
+
+    used_count:
+        label: jiri.jkshop::lang.coupons.used_count
+        type: number
+        span: auto
+        disabled: true
+
+    value:
+        label: jiri.jkshop::lang.coupons.value
+        type: number
+        span: auto
+        
+    type_value:
+        label: jiri.jkshop::lang.coupons.type_value
+        type: dropdown
+        span: auto
+        
+# users
+    users_section:
+        label: jiri.jkshop::lang.coupons.users
+        type: section
+        
+    users:
+        type: partial
+        path: ~/plugins/jiri/jkshop/models/coupon/_users_relation.htm           
+    
+    global_section:
+        label: jiri.jkshop::lang.coupons.global_section
+        comment: jiri.jkshop::lang.coupons.global_section_comment
+        type: section
+    
+        
+    minimum_value_basket:
+        label: jiri.jkshop::lang.coupons.minimum_value_basket
+        comment: jiri.jkshop::lang.coupons.minimum_value_basket_comment
+        type: number
+        span: full
+        default: 0
+        
+        
+# categories
+    categories_section:
+        label: jiri.jkshop::lang.coupons.categories
+        type: section
+    categories:
+        type: partial
+        path: ~/plugins/jiri/jkshop/models/coupon/_categories_relation.htm
+        
+# products
+    products_section:
+        label: jiri.jkshop::lang.coupons.products
+        type: section
+    products:
+        type: partial
+        path: ~/plugins/jiri/jkshop/models/coupon/_products_relation.htm                     

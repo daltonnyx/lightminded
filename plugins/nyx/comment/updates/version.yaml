@@ -1,0 +1,5 @@
+1.0.1: First version of Comment
+1.0.2: Create database tables and Model
+1.0.3:
+    - Migrate and Seed
+    - create_comments_table.php

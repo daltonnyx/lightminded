@@ -1,0 +1,33 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: jiri.jkshop::lang.products.id
+        searchable: true
+        
+    image:
+        label: jiri.jkshop::lang.products.image
+        type: partial
+        path: ~/plugins/jiri/jkshop/models/product/_image_column.htm
+        
+    title:
+        label: jiri.jkshop::lang.products.title
+        searchable: true        
+        
+    active:
+        label: jiri.jkshop::lang.products.active
+        type: switch        
+        
+    pre_tax_retail_price:
+        label: jiri.jkshop::lang.products.pre_tax_retail_price
+        
+    retail_price_with_tax:
+        label: jiri.jkshop::lang.products.retail_price_with_tax
+        
+    quantity:
+        label: jiri.jkshop::lang.products.quantity    
+        type: partial
+        path: ~/plugins/jiri/jkshop/models/product/_quantity_column.htm
+        

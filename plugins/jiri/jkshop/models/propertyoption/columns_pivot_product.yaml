@@ -1,0 +1,14 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    
+    title:
+        label: jiri.jkshop::lang.properties.title
+        
+    property:
+        label: jiri.jkshop::lang.properties.menu_label_single
+        relation: property
+        select: title
+        

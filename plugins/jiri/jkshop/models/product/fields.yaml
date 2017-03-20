@@ -1,0 +1,300 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+        title:
+            tab: jiri.jkshop::lang.products.detail
+            label: jiri.jkshop::lang.products.title
+            span: auto
+
+        slug:
+            tab: jiri.jkshop::lang.products.detail
+            label: jiri.jkshop::lang.products.slug
+            span: auto
+            preset:
+                field: title
+                type: slug  
+                
+        ean_13:
+            tab: jiri.jkshop::lang.products.detail
+            label: jiri.jkshop::lang.products.ean_13
+            span: auto    
+            
+        barcode:
+            tab: jiri.jkshop::lang.products.detail
+            label: jiri.jkshop::lang.products.barcode
+            span: auto              
+
+        active:
+            tab: jiri.jkshop::lang.products.detail
+            label: jiri.jkshop::lang.products.active
+            type: switch
+            span: auto
+            default: true
+
+        visibility:
+            tab: jiri.jkshop::lang.products.detail
+            label: jiri.jkshop::lang.products.visibility
+            type: switch
+            span: auto
+            default: true            
+
+        available_for_order:
+            tab: jiri.jkshop::lang.products.detail
+            label: jiri.jkshop::lang.products.available_for_order
+            type: switch
+            span: auto
+            default: true
+
+        show_price:
+            tab: jiri.jkshop::lang.products.detail
+            label: jiri.jkshop::lang.products.show_price
+            type: switch
+            span: auto
+            default: true
+
+        condition:
+            tab: jiri.jkshop::lang.products.detail
+            label: jiri.jkshop::lang.products.condition
+            span: auto
+            type: dropdown
+            options:
+                0: jiri.jkshop::lang.products.condition_0
+                1: jiri.jkshop::lang.products.condition_1
+                2: jiri.jkshop::lang.products.condition_2
+                
+        brand:
+            tab: jiri.jkshop::lang.products.detail
+            label: jiri.jkshop::lang.products.brand
+            span: auto
+            type: relation
+            select: title
+            emptyOption: jiri.jkshop::lang.plugin.please_select
+                
+        short_description:
+            tab: jiri.jkshop::lang.products.detail
+            label: jiri.jkshop::lang.products.short_description
+            span: auto                  
+            type: richeditor
+                
+        description:
+            tab: jiri.jkshop::lang.products.detail
+            label: jiri.jkshop::lang.products.description
+            span: auto                  
+            type: richeditor
+
+# Prices
+
+        pre_tax_wholesale_price:
+            tab: jiri.jkshop::lang.products.prices
+            label: jiri.jkshop::lang.products.pre_tax_wholesale_price
+            comment: jiri.jkshop::lang.products.pre_tax_wholesale_price_comment
+            span: full  
+            type: number
+
+
+        pre_tax_retail_price:
+            tab: jiri.jkshop::lang.products.prices
+            label: jiri.jkshop::lang.products.pre_tax_retail_price
+            comment: jiri.jkshop::lang.products.pre_tax_retail_price_comment
+            span: full  
+            type: number
+
+        tax:
+            tab: jiri.jkshop::lang.products.prices
+            label: jiri.jkshop::lang.products.tax
+            type: relation
+            span: full  
+            
+        retail_price_with_tax:
+            tab: jiri.jkshop::lang.products.prices
+            label: jiri.jkshop::lang.products.retail_price_with_tax
+            comment: jiri.jkshop::lang.products.retail_price_with_tax_comment 
+            span: full 
+            type: number
+            
+        on_sale:
+            tab: jiri.jkshop::lang.products.prices
+            label: jiri.jkshop::lang.products.on_sale
+            type: switch
+            span: auto
+            default: false
+            
+        individual_prices:
+            tab: jiri.jkshop::lang.products.prices
+            label: jiri.jkshop::lang.products.individual_prices
+            type: partial
+            path: ~/plugins/jiri/jkshop/models/product/_individual_prices_relation.htm            
+            
+
+
+# SEO
+        meta_title:
+            tab: jiri.jkshop::lang.products.seo
+            label: jiri.jkshop::lang.products.meta_title
+            
+        meta_keywords:
+            tab: jiri.jkshop::lang.products.seo
+            comment: jiri.jkshop::lang.products.meta_keywords_comment
+            label: jiri.jkshop::lang.products.meta_keywords
+
+        meta_description:
+            tab: jiri.jkshop::lang.products.seo
+            label: jiri.jkshop::lang.products.meta_description
+            type: textarea
+
+
+# Categories
+        default_category:
+            tab: jiri.jkshop::lang.products.categories
+            label: jiri.jkshop::lang.products.default_category
+            comment: jiri.jkshop::lang.products.default_category_comment
+            type: relation
+            select: title
+          
+        categories:
+            tab: jiri.jkshop::lang.products.categories
+            label: jiri.jkshop::lang.products.categories
+            type: relation
+            select: title
+
+# Size, weight
+
+        package_width:
+            tab: jiri.jkshop::lang.products.size_weight
+            label: jiri.jkshop::lang.products.package_width
+            span: auto  
+            type: number
+
+        package_height:
+            tab: jiri.jkshop::lang.products.size_weight
+            label: jiri.jkshop::lang.products.package_height
+            span: auto  
+            type: number
+
+        package_depth:
+            tab: jiri.jkshop::lang.products.size_weight
+            label: jiri.jkshop::lang.products.package_depth
+            span: auto  
+            type: number
+
+        package_weight:
+            tab: jiri.jkshop::lang.products.size_weight
+            label: jiri.jkshop::lang.products.package_weight
+            span: auto  
+            type: number
+
+        additional_shipping_fees:
+            tab: jiri.jkshop::lang.products.size_weight
+            label: jiri.jkshop::lang.products.additional_shipping_fees
+            span: auto  
+            type: number
+
+# Quantities
+
+        quantity:
+            tab: jiri.jkshop::lang.products.quantities
+            label: jiri.jkshop::lang.products.quantity
+            span: auto  
+            type: number
+            default: 0
+
+        when_out_of_stock:
+            tab: jiri.jkshop::lang.products.quantities
+            label: jiri.jkshop::lang.products.when_out_of_stock
+            span: auto
+            type: dropdown
+            options:
+                0: jiri.jkshop::lang.products.when_out_of_stock_0
+                1: jiri.jkshop::lang.products.when_out_of_stock_1
+
+        minimum_quantity:
+            tab: jiri.jkshop::lang.products.quantities
+            label: jiri.jkshop::lang.products.minimum_quantity
+            comment: jiri.jkshop::lang.products.minimum_quantity_comment
+            span: auto  
+            type: number
+            default: 1
+
+        availability_date:
+            tab: jiri.jkshop::lang.products.quantities
+            label: jiri.jkshop::lang.products.availability_date
+            comment: jiri.jkshop::lang.products.availability_date_comment
+            span: auto  
+            type: datepicker
+            mode: date            
+
+
+# Customization
+
+        customization:
+            tab: jiri.jkshop::lang.products.customization_tab
+            label: jiri.jkshop::lang.products.customization
+            type: repeater
+            form:
+                fields:
+                    label:
+                        label: jiri.jkshop::lang.products.label
+                        type: text
+                    value:
+                        label: jiri.jkshop::lang.products.value
+                        type: text
+                        
+# Properties
+
+        basic_properties_section:
+            tab: jiri.jkshop::lang.products.properties_tab
+            label: jiri.jkshop::lang.products.basic_properties_section
+            type: section
+            comment: jiri.jkshop::lang.products.properties
+    
+        properties:
+            tab: jiri.jkshop::lang.products.properties_tab
+            type: relation
+            select: title
+            
+        advanced_properties_section:
+            tab: jiri.jkshop::lang.products.properties_tab
+            label: jiri.jkshop::lang.products.advanced_properties_section
+            type: section
+            comment: jiri.jkshop::lang.products.advanced_properties_section_comment
+            
+        propertyOptions:
+            tab: jiri.jkshop::lang.products.properties_tab
+            type: partial
+            path: ~/plugins/jiri/jkshop/models/product/_property_options_relation.htm
+            
+            
+
+# Accessories
+        accessories:
+            tab: jiri.jkshop::lang.products.accessories
+            label: jiri.jkshop::lang.products.accessories
+            type: partial
+            path: ~/plugins/jiri/jkshop/models/product/_accessories_relation.htm
+
+
+
+# Featured
+        featured:
+            tab: jiri.jkshop::lang.products.featured_tab
+            label: jiri.jkshop::lang.products.featured
+            type: partial
+            path: ~/plugins/jiri/jkshop/models/product/_featured_relation.htm
+
+
+# Images
+        images:
+            label: jiri.jkshop::lang.products.images
+            tab: jiri.jkshop::lang.products.images
+            type: fileupload
+            mode: image
+            
+# Attachments
+        attachments:
+            label: jiri.jkshop::lang.products.attachments
+            tab: jiri.jkshop::lang.products.attachments
+            type: fileupload
+            mode: file

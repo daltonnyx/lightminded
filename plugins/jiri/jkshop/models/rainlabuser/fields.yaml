@@ -1,0 +1,95 @@
+# ===================================
+#  Extended Rainlab User model
+# ===================================
+
+jkshop_contact_email:
+    label: jiri.jkshop::lang.orders.contact_email
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto
+jkshop_contact_phone:
+    label: jiri.jkshop::lang.orders.contact_phone
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto   
+    
+jkshop_delivery_address_section:
+    label: jiri.jkshop::lang.orders.delivery_address_section
+    tab: jiri.jkshop::lang.plugin.name
+    type: section
+    span: auto
+jkshop_invoice_address_section:
+    label: jiri.jkshop::lang.orders.invoice_address_section
+    tab: jiri.jkshop::lang.plugin.name
+    type: section
+    span: auto
+
+jkshop_ds_first_name:
+    label: jiri.jkshop::lang.orders.ds_first_name
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto    
+jkshop_is_first_name:
+    label: jiri.jkshop::lang.orders.is_first_name
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto              
+
+jkshop_ds_last_name:
+    label: jiri.jkshop::lang.orders.ds_last_name
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto    
+jkshop_is_last_name:
+    label: jiri.jkshop::lang.orders.is_last_name
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto  
+
+jkshop_ds_address:
+    label: jiri.jkshop::lang.orders.ds_address
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto    
+jkshop_is_address:
+    label: jiri.jkshop::lang.orders.is_address
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto              
+
+jkshop_ds_address_2:
+    label: jiri.jkshop::lang.orders.ds_address_2
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto    
+jkshop_is_address_2:
+    label: jiri.jkshop::lang.orders.is_address_2
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto   
+
+jkshop_ds_postcode:
+    label: jiri.jkshop::lang.orders.ds_postcode
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto    
+jkshop_is_postcode:
+    label: jiri.jkshop::lang.orders.is_postcode
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto  
+
+jkshop_ds_city:
+    label: jiri.jkshop::lang.orders.ds_city
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto    
+jkshop_is_city:
+    label: jiri.jkshop::lang.orders.is_city
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto        
+
+jkshop_ds_county:
+    label: jiri.jkshop::lang.orders.ds_county
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto    
+jkshop_is_county:
+    label: jiri.jkshop::lang.orders.is_county
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto             
+
+jkshop_ds_country:
+    label: jiri.jkshop::lang.orders.ds_country
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto    
+jkshop_is_country:
+    label: jiri.jkshop::lang.orders.is_country
+    tab: jiri.jkshop::lang.plugin.name
+    span: auto     

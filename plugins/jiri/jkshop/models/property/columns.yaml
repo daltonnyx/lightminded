@@ -1,0 +1,32 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    
+    id:
+        label: ID
+        searchable: true
+        
+    title:
+        label: jiri.jkshop::lang.properties.title
+        searchable: true
+
+    placeholder:
+        label: jiri.jkshop::lang.properties.placeholder     
+        searchable: true
+        
+    type:
+        label: jiri.jkshop::lang.properties.type     
+        type: partial
+        path: ~/plugins/jiri/jkshop/models/property/_type_column.htm    
+        
+    required:
+        label: jiri.jkshop::lang.properties.required
+        type: switch
+        
+
+    options:
+        label: jiri.jkshop::lang.properties.options     
+        relation: options
+        select: title

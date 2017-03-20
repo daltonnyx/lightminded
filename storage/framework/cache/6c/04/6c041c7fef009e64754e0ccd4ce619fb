@@ -1,0 +1,53 @@
+1489976003a:1:{s:10:"header.htm";a:6:{s:8:"fileName";s:10:"header.htm";s:7:"content";s:1121:"[viewBag]
+==
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>{{ this.page.title }}</title>
+
+</head>
+
+<body>
+    
+<div class="gallery-fix"></div>         <!-- Fix Gallery next/prev error on Android -->
+<div class="sidebar-tap-close"></div>   <!-- Overlay for content to close Sidebar -->
+
+<div class="header-fixed">
+    <a href="#" class="header-icon-1 open-left-sidebar"><i class="fa fa-navicon"></i></a>
+    <a href="index.html" class="header-logo">NEWS</a>
+    <!--<a href="#" class="header-icon-2 open-right-sidebar"><i class="fa fa-heart"></i></a>-->
+    <a href="#" class="header-icon-3 open-search-bar"><i class="fa fa-search"></i></a>
+</div>
+    
+<div class="header-search">
+    <input type="text" value="Looking for something?">
+    <a class="close-search-bar" href="#"><i class="fa fa-times"></i></a>
+</div>";s:5:"mtime";i:1489498342;s:6:"markup";s:1108:"<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>{{ this.page.title }}</title>
+
+</head>
+
+<body>
+    
+<div class="gallery-fix"></div>         <!-- Fix Gallery next/prev error on Android -->
+<div class="sidebar-tap-close"></div>   <!-- Overlay for content to close Sidebar -->
+
+<div class="header-fixed">
+    <a href="#" class="header-icon-1 open-left-sidebar"><i class="fa fa-navicon"></i></a>
+    <a href="index.html" class="header-logo">NEWS</a>
+    <!--<a href="#" class="header-icon-2 open-right-sidebar"><i class="fa fa-heart"></i></a>-->
+    <a href="#" class="header-icon-3 open-search-bar"><i class="fa fa-search"></i></a>
+</div>
+    
+<div class="header-search">
+    <input type="text" value="Looking for something?">
+    <a class="close-search-bar" href="#"><i class="fa fa-times"></i></a>
+</div>";s:4:"code";N;s:7:"viewBag";a:0:{}}}

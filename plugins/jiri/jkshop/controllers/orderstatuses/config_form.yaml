@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: jiri.jkshop::lang.orderstatuses.menu_label_single
+
+# Model Form Field configuration
+form: $/jiri/jkshop/models/orderstatus/fields.yaml
+
+# Model Class name
+modelClass: Jiri\JKShop\Models\OrderStatus
+
+# Default redirect location
+defaultRedirect: jiri/jkshop/orderstatuses
+
+# Create page
+create:
+    title: jiri.jkshop::lang.orderstatuses.create
+    redirect: jiri/jkshop/orderstatuses/update/:id
+    redirectClose: jiri/jkshop/orderstatuses
+
+# Update page
+update:
+    title: jiri.jkshop::lang.orderstatuses.edit
+    redirect: jiri/jkshop/orderstatuses
+    redirectClose: jiri/jkshop/orderstatuses
+
+# Preview page
+preview:
+    title: jiri.jkshop::lang.orderstatuses.preview

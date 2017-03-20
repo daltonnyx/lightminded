@@ -1,0 +1,33 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    post_id:
+        label: Post
+        type: dropdown
+        span: right
+    title:
+        label: Title
+        placeholder: Title
+        span: left
+    owner:
+        label: Name
+        placeholder: Your Name
+        span: left
+    avatar:
+        label: Avatar
+        type: fileupload
+        mode: image
+        imageWidth: 200
+        imageHeight: 200
+        span: right
+    email:
+        label: Email
+        placeholder: Your Email
+        span: left
+    message: 
+        label: Comment
+        placeholder: Your Comment
+        type: textarea
+        span: left

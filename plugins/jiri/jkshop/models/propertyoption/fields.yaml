@@ -1,0 +1,9 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    
+    title:
+        label: jiri.jkshop::lang.properties.title
+        type: text

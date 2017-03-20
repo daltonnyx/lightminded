@@ -1,0 +1,55 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    active:
+        label: jiri.jkshop::lang.paymentgateways.active
+        type: switch
+        span: full
+        default: true
+
+    orderStatusBefore:
+        label: jiri.jkshop::lang.paymentgateways.orderStatusBefore
+        span: auto
+        type: relation
+        select: title
+
+    orderStatusAfter:
+        label: jiri.jkshop::lang.paymentgateways.orderStatusAfter
+        span: auto
+        type: relation
+        select: title            
+        
+    gateway_title:
+        label: jiri.jkshop::lang.paymentgateways.gateway_title
+        comment: jiri.jkshop::lang.paymentgateways.gateway_title_comment
+        span: auto
+        
+    payment_page:
+        label: jiri.jkshop::lang.paymentgateways.payment_page
+        comment: jiri.jkshop::lang.paymentgateways.payment_page_comment
+        span: auto
+        type: dropdown
+        
+    gateway_currency:
+        label: jiri.jkshop::lang.paymentgateways.gateway_currency
+        comment: jiri.jkshop::lang.paymentgateways.gateway_currency_comment
+        span: auto
+        
+    gateway:
+        label: jiri.jkshop::lang.paymentgateways.gateway
+        comment: jiri.jkshop::lang.paymentgateways.gateway_comment
+        span: auto
+        type: dropdown
+        
+    parameters_section:
+        label: jiri.jkshop::lang.paymentgateways.parameters_section
+        type: section
+        comment: jiri.jkshop::lang.paymentgateways.parameters_section_comment
+    
+    parameters:
+        type: partial
+        path: $/jiri/jkshop/controllers/paymentgateways/_parameters_field.htm        
+
+

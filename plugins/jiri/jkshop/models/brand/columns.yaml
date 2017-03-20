@@ -1,0 +1,24 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: jiri.jkshop::lang.brands.id
+        searchable: true
+        
+    title:
+        label: jiri.jkshop::lang.brands.title
+        searchable: true
+        
+    slug:
+        label: jiri.jkshop::lang.brands.slug
+        searchable: false
+        
+    active:
+        label: jiri.jkshop::lang.brands.active
+        type: switch
+        
+    show_in_menu:
+        label: jiri.jkshop::lang.brands.show_in_menu
+        type: switch     

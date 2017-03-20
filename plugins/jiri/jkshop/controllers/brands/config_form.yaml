@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: jiri.jkshop::lang.brands.brand
+
+# Model Form Field configuration
+form: $/jiri/jkshop/models/brand/fields.yaml
+
+# Model Class name
+modelClass: Jiri\JKShop\Models\Brand
+
+# Default redirect location
+defaultRedirect: jiri/jkshop/brands
+
+# Create page
+create:
+    title: jiri.jkshop::lang.brands.create_brand
+    redirect: jiri/jkshop/brands/update/:id
+    redirectClose: jiri/jkshop/brands
+
+# Update page
+update:
+    title: jiri.jkshop::lang.brands.edit_brand
+    redirect: jiri/jkshop/brands
+    redirectClose: jiri/jkshop/brands
+
+# Preview page
+preview:
+    title: jiri.jkshop::lang.brands.preview_brand

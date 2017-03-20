@@ -1,0 +1,41 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+accessories:
+    label: jiri.jkshop::lang.products.accessories
+    view:
+        list: $/jiri/jkshop/models/product/columns.yaml
+        toolbarButtons: add|remove
+    manage:
+        recordsPerPage: 10
+
+featured:
+    label: jiri.jkshop::lang.products.featured
+    view:
+        list: $/jiri/jkshop/models/product/columns.yaml
+        toolbarButtons: add|remove
+    manage:
+        recordsPerPage: 10  
+        
+        
+individual_prices:
+    label: jiri.jkshop::lang.products.individual_prices
+    view:
+        list: $/jiri/jkshop/models/productuserprice/columns.yaml
+        toolbarButtons: create|delete
+    manage:
+        form: $/jiri/jkshop/models/productuserprice/fields.yaml
+        recordsPerPage: 10   
+        
+propertyOptions:
+    label: jiri.jkshop::lang.products.property_option
+    view:
+        list: $/jiri/jkshop/models/productpropertyoptionpivot/columns.yaml
+        showSearch: false
+        toolbarButtons: add|remove
+    manage:
+        list: $/jiri/jkshop/models/propertyoption/columns_pivot_product.yaml
+        form: $/jiri/jkshop/models/propertyoption/fields.yaml        
+    pivot:
+        form: $/jiri/jkshop/models/productpropertyoptionpivot/fields.yaml       

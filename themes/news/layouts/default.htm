@@ -1,0 +1,35 @@
+description = "Default Layout"
+==
+{% partial 'header' %}
+
+{% partial 'leftbar' %}
+
+<div id="page-content"><!--Add sidebar-move to move with body-->
+    <div id="page-content-scroll"><!--Enables this element to be scrolled -->        
+        <div class="header-clear-large"></div>
+        {% page %}
+        <div class="footer">
+            <div class="footer-content">
+                <h3 class="footer-logo">NEWS MOBILE</h3>
+                <p class="footer-text">
+                    We aim to simplify your life by creating a beautiful and simple product that's feature rich and easy to use!
+                </p>
+            </div>
+            <div class="footer-socials">
+                <a href="#" class="scale-hover facebook-color"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="scale-hover twitter-color"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="scale-hover google-color"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="scale-hover phone-color"><i class="fa fa-phone"></i></a>
+                <a href="#" class="scale-hover mail-color"><i class="fa fa-envelope-o"></i></a>
+                <a href="#" class="scale-hover bg-night-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+                <div class="clear"></div>
+            </div>
+            <p class="footer-strip">Copyright <span id="copyright-year"></span> Enabled. All Rights Reserved</p>
+        </div>
+    </div>
+    
+</div>
+
+
+
+{% partial 'footer' %}

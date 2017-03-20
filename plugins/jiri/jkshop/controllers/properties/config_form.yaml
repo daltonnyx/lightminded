@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: jiri.jkshop::lang.properties.menu_label_single
+
+# Model Form Field configuration
+form: $/jiri/jkshop/models/property/fields.yaml
+
+# Model Class name
+modelClass: Jiri\JKShop\Models\Property
+
+# Default redirect location
+defaultRedirect: jiri/jkshop/properties
+
+# Create page
+create:
+    title: jiri.jkshop::lang.properties.create
+    redirect: jiri/jkshop/properties/update/:id
+    redirectClose: jiri/jkshop/properties
+
+# Update page
+update:
+    title: jiri.jkshop::lang.properties.create
+    redirect: jiri/jkshop/properties
+    redirectClose: jiri/jkshop/properties
+
+# Preview page
+preview:
+    title: jiri.jkshop::lang.properties.create

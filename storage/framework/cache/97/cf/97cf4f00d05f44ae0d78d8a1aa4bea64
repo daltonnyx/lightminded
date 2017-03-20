@@ -1,0 +1,50 @@
+1489976003a:1:{s:8:"blog.htm";a:9:{s:8:"fileName";s:8:"blog.htm";s:7:"content";s:813:"title = "Blog"
+url = "/blog"
+layout = "default"
+is_hidden = 0
+==
+<?php
+use RainLab\Blog\Models\Post;
+
+function onStart(){
+    $this['posts'] = Post::isPublished()
+					    ->orderBy('published_at', 'desc')
+					    ->take(5)
+					    ->with('categories')
+					    ->get();
+}
+?>
+==
+<div class="content">
+    <div class="thumb-layout thumb-layout-page">
+     {% for post in posts %}
+     <a href="post/{{ post.slug }}">
+        <img class="preload-image" data-original="{{ post.featured_images.first.getPath() }}" alt="img">
+        <strong>{{ post.title }}</strong>
+        <em>{{ post.excerpt }}</em>
+    </a>        
+     {% endfor %}
+    </div>
+    <div class="decoration"></div>
+    <a href="#" class="load-more-thumbs button button-fullscreen button-green full-bottom">Load More</a>
+</div>";s:5:"mtime";i:1488786252;s:6:"markup";s:524:"<div class="content">
+    <div class="thumb-layout thumb-layout-page">
+     {% for post in posts %}
+     <a href="post/{{ post.slug }}">
+        <img class="preload-image" data-original="{{ post.featured_images.first.getPath() }}" alt="img">
+        <strong>{{ post.title }}</strong>
+        <em>{{ post.excerpt }}</em>
+    </a>        
+     {% endfor %}
+    </div>
+    <div class="decoration"></div>
+    <a href="#" class="load-more-thumbs button button-fullscreen button-green full-bottom">Load More</a>
+</div>";s:4:"code";s:211:"use RainLab\Blog\Models\Post;
+
+function onStart(){
+    $this['posts'] = Post::isPublished()
+					    ->orderBy('published_at', 'desc')
+					    ->take(5)
+					    ->with('categories')
+					    ->get();
+}";s:5:"title";s:4:"Blog";s:3:"url";s:5:"/blog";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

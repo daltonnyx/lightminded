@@ -1,0 +1,270 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+        
+ #  Detail
+        orderstatus:
+            tab: jiri.jkshop::lang.orders.detail
+            label: jiri.jkshop::lang.orders.orderstatus
+            comment: jiri.jkshop::lang.orders.orderstatus_comment
+            type: relation
+            select: title
+            span: auto
+            
+        carrier:
+            tab: jiri.jkshop::lang.orders.detail
+            label: jiri.jkshop::lang.orders.carrier
+            type: relation
+            select: title
+            span: auto
+            
+        invoice:
+            tab: jiri.jkshop::lang.orders.detail
+            label: jiri.jkshop::lang.orders.invoice
+            type: fileupload
+            mode: file
+            span: auto
+            
+        tracking_number:
+            tab: jiri.jkshop::lang.orders.detail
+            label: jiri.jkshop::lang.orders.tracking_number
+            span: auto
+            
+        note:
+            tab: jiri.jkshop::lang.orders.detail
+            label: jiri.jkshop::lang.orders.note
+            type: textarea
+            span: full
+            size: small
+
+# Products
+        products_json:
+            type: repeater
+            label: jiri.jkshop::lang.orders.products_json
+            tab: jiri.jkshop::lang.orders.products_json
+            form:
+                fields:
+                    product_id:
+                        label: jiri.jkshop::lang.orders.product_id
+                        type: dropdown
+                        options: getProductOptions
+                        
+                    options_data:
+                        cssClass: 'hidden'
+                        
+                    options_text:
+                        label: jiri.jkshop::lang.orders.options_text
+                        type: text
+                        
+                    quantity:
+                        label: jiri.jkshop::lang.orders.quantity
+                        type: number
+                        
+                    total_price_without_tax:
+                        label: jiri.jkshop::lang.orders.total_price_without_tax
+                        type: number
+                        
+                    total_tax:
+                        label: jiri.jkshop::lang.orders.total_tax
+                        type: number
+                        
+                    total_price:
+                        label: jiri.jkshop::lang.orders.total_price
+                        type: number
+
+
+
+
+#  Customer
+
+        user_id:
+            label: jiri.jkshop::lang.orders.user_id
+            tab: jiri.jkshop::lang.orders.customer
+            comment: jiri.jkshop::lang.orders.user_id_comment
+            span: full 
+            type: dropdown
+            options: getUserOptions
+            
+
+        contact_address_section:
+            label: jiri.jkshop::lang.orders.contact_address_section
+            tab: jiri.jkshop::lang.orders.customer
+            type: section
+            span: full
+            
+        contact_email:
+            label: jiri.jkshop::lang.orders.contact_email
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto
+        contact_phone:
+            label: jiri.jkshop::lang.orders.contact_phone
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto            
+
+        delivery_address_section:
+            label: jiri.jkshop::lang.orders.delivery_address_section
+            tab: jiri.jkshop::lang.orders.customer
+            type: section
+            span: auto
+        invoice_address_section:
+            label: jiri.jkshop::lang.orders.invoice_address_section
+            tab: jiri.jkshop::lang.orders.customer
+            type: section
+            span: auto
+            
+        ds_first_name:
+            label: jiri.jkshop::lang.orders.ds_first_name
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto    
+        is_first_name:
+            label: jiri.jkshop::lang.orders.is_first_name
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto              
+            
+        ds_last_name:
+            label: jiri.jkshop::lang.orders.ds_last_name
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto    
+        is_last_name:
+            label: jiri.jkshop::lang.orders.is_last_name
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto  
+            
+        ds_address:
+            label: jiri.jkshop::lang.orders.ds_address
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto    
+        is_address:
+            label: jiri.jkshop::lang.orders.is_address
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto              
+            
+        ds_address_2:
+            label: jiri.jkshop::lang.orders.ds_address_2
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto    
+        is_address_2:
+            label: jiri.jkshop::lang.orders.is_address_2
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto   
+            
+        ds_postcode:
+            label: jiri.jkshop::lang.orders.ds_postcode
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto    
+        is_postcode:
+            label: jiri.jkshop::lang.orders.is_postcode
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto  
+            
+        ds_city:
+            label: jiri.jkshop::lang.orders.ds_city
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto    
+        is_city:
+            label: jiri.jkshop::lang.orders.is_city
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto        
+            
+        ds_county:
+            label: jiri.jkshop::lang.orders.ds_county
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto    
+        is_county:
+            label: jiri.jkshop::lang.orders.is_county
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto             
+            
+        ds_country:
+            label: jiri.jkshop::lang.orders.ds_country
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto    
+        is_country:
+            label: jiri.jkshop::lang.orders.is_country
+            tab: jiri.jkshop::lang.orders.customer
+            span: auto             
+
+
+
+# Prices
+
+        total_global_discount:
+            label: jiri.jkshop::lang.orders.total_global_discount
+            tab: jiri.jkshop::lang.orders.prices
+            type: number
+            span: auto
+            
+        coupon:
+            label: jiri.jkshop::lang.orders.coupon
+            tab: jiri.jkshop::lang.orders.prices
+            type: relation
+            nameFrom: code
+            emptyOption: -- Coupon --
+            span: auto
+            
+        total_price_without_tax:
+            label: jiri.jkshop::lang.orders.total_price_without_tax
+            tab: jiri.jkshop::lang.orders.prices
+            type: number
+            span: auto
+
+        total_tax:
+            label: jiri.jkshop::lang.orders.total_tax
+            tab: jiri.jkshop::lang.orders.prices
+            type: number
+            span: auto
+            
+        total_price:
+            label: jiri.jkshop::lang.orders.total_price
+            tab: jiri.jkshop::lang.orders.prices
+            type: number
+            span: auto
+
+        shipping_price_without_tax:
+            label: jiri.jkshop::lang.orders.shipping_price_without_tax
+            tab: jiri.jkshop::lang.orders.prices
+            type: number
+            span: auto
+
+        shipping_tax:
+            label: jiri.jkshop::lang.orders.shipping_tax
+            tab: jiri.jkshop::lang.orders.prices
+            type: number
+            span: auto
+
+        shipping_price:
+            label: jiri.jkshop::lang.orders.shipping_price
+            tab: jiri.jkshop::lang.orders.prices
+            type: number
+            span: auto
+
+
+# Payment methods            
+        paymentGateway:
+            label: jiri.jkshop::lang.orders.payment_gateway
+            tab: jiri.jkshop::lang.orders.payment_method
+            type: relation
+            nameFrom: gateway_title
+            span: fulll
+            
+        payment_method:
+            label: jiri.jkshop::lang.orders.payment_method_field
+            tab: jiri.jkshop::lang.orders.payment_method
+            type: dropdown
+            span: full
+            
+            
+        paid_date:
+            label: jiri.jkshop::lang.orders.paid_date
+            tab: jiri.jkshop::lang.orders.payment_method
+            type: datepicker
+            span: auto            
+                            
+        paid_detail:
+            label: jiri.jkshop::lang.orders.paid_detail
+            tab: jiri.jkshop::lang.orders.payment_method
+            type: partial
+            path: ~/plugins/jiri/jkshop/models/order/_paid_detail_field.htm

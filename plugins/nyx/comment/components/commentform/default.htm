@@ -1,0 +1,5 @@
+{% if(__SELF__.property('layout') == 'layout_a') %}
+    {% partial 'commentForm::layout_a' %}
+{% elseif(__SELF__.property('layout') == 'layout_b') %}
+    {% partial 'commentForm::layout_b' %}
+{% endif %}

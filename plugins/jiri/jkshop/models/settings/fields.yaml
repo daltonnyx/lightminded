@@ -1,0 +1,338 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+        
+        productDefaultImage:
+            label: jiri.jkshop::lang.settings.product_default_image
+            tab: jiri.jkshop::lang.settings.general
+            type: fileupload
+            mode: image
+        
+        
+        emails_section:
+            tab: jiri.jkshop::lang.settings.general
+            label: Emails
+            type: section
+            
+        copy_all_order_emails_to:
+            tab: jiri.jkshop::lang.settings.general
+            label: jiri.jkshop::lang.settings.copy_all_order_emails_to
+            span: auto           
+            
+            
+        user_details_section:
+            tab: jiri.jkshop::lang.settings.general
+            label: jiri.jkshop::lang.settings.user_details_section
+            type: section
+        
+        number_format_thousands_sep:
+            tab: jiri.jkshop::lang.settings.general
+            label: jiri.jkshop::lang.settings.number_format_thousands_sep
+            span: auto
+            default: ,
+            
+        number_format_decimals:
+            tab: jiri.jkshop::lang.settings.general
+            label: jiri.jkshop::lang.settings.number_format_decimals
+            span: auto
+            type: number
+            default: 2
+            
+        number_format_dec_point:
+            tab: jiri.jkshop::lang.settings.general
+            label: jiri.jkshop::lang.settings.number_format_dec_point
+            span: auto
+            default: .
+            
+        currency_char:
+            tab: jiri.jkshop::lang.settings.general
+            label: jiri.jkshop::lang.settings.currency_char
+            span: auto
+            default: '$'
+            
+        currency_char_position:
+            tab: jiri.jkshop::lang.settings.general
+            label: jiri.jkshop::lang.settings.currency_char_position
+            span: auto
+            type: dropdown
+            options:
+                1 : jiri.jkshop::lang.settings.currency_char_position_before
+                2 : jiri.jkshop::lang.settings.currency_char_position_after
+                
+        extended_inventory_management_section:
+            tab: jiri.jkshop::lang.settings.general
+            label: jiri.jkshop::lang.settings.extended_inventory_management
+            comment: jiri.jkshop::lang.settings.extended_inventory_management_comment
+            type: section
+
+        extended_inventory_management:
+            tab: jiri.jkshop::lang.settings.general
+            label: jiri.jkshop::lang.orderstatuses.extended_inventory_management
+            type: switch
+            span: full
+            default: false
+                
+            
+# Cash on delivery
+        cash_on_delivery_obsolete:
+            tab: jiri.jkshop::lang.settings.cash_on_delivery
+            label: jiri.jkshop::lang.settings.section_obsolete
+            type: section
+            comment: jiri.jkshop::lang.settings.section_obsolete_comment
+
+        cash_on_delivery_active:
+            tab: jiri.jkshop::lang.settings.cash_on_delivery
+            label: jiri.jkshop::lang.settings.active
+            span: full
+            type: switch
+            default: true
+            disabled: true
+            
+        cash_on_delivery_order_status_before:
+            tab: jiri.jkshop::lang.settings.cash_on_delivery
+            label: jiri.jkshop::lang.settings.order_status_before
+            span: auto
+            type: relation
+            select: title
+            disabled: true
+            
+        cash_on_delivery_order_status_after:
+            tab: jiri.jkshop::lang.settings.cash_on_delivery
+            label: jiri.jkshop::lang.settings.order_status_after
+            span: auto
+            type: relation
+            select: title            
+            disabled: true
+
+
+# Bank transfer
+        bank_transfer_obsolete:
+            tab: jiri.jkshop::lang.settings.bank_transfer
+            label: jiri.jkshop::lang.settings.section_obsolete
+            type: section
+            comment: jiri.jkshop::lang.settings.section_obsolete_comment
+
+        bank_transfer_active:
+            tab: jiri.jkshop::lang.settings.bank_transfer
+            label: jiri.jkshop::lang.settings.active
+            span: full
+            type: switch
+            default: true
+            disabled: true
+
+        bank_transfer_order_status_before:
+            tab: jiri.jkshop::lang.settings.bank_transfer
+            label: jiri.jkshop::lang.settings.order_status_before
+            span: auto
+            type: relation
+            select: title
+            disabled: true
+            
+        bank_transfer_order_status_after:
+            tab: jiri.jkshop::lang.settings.bank_transfer
+            label: jiri.jkshop::lang.settings.order_status_after
+            span: auto
+            type: relation
+            select: title   
+            disabled: true
+
+# Paypal
+        paypal_obsolete:
+            tab: jiri.jkshop::lang.settings.paypal
+            label: jiri.jkshop::lang.settings.section_obsolete
+            type: section
+            comment: jiri.jkshop::lang.settings.section_obsolete_comment
+
+        paypal_active:
+            tab: jiri.jkshop::lang.settings.paypal
+            label: jiri.jkshop::lang.settings.active
+            span: full
+            type: switch
+            default: true
+            disabled: true
+            
+        paypal_order_status_before:
+            tab: jiri.jkshop::lang.settings.paypal
+            label: jiri.jkshop::lang.settings.order_status_before
+            span: auto
+            type: relation
+            select: title
+            disabled: true
+            
+        paypal_order_status_after:
+            tab: jiri.jkshop::lang.settings.paypal
+            label: jiri.jkshop::lang.settings.order_status_after
+            span: auto
+            type: relation
+            select: title  
+            disabled: true
+            
+        paypal_use_sandbox:
+            tab: jiri.jkshop::lang.settings.paypal
+            label: jiri.jkshop::lang.settings.paypal_use_sandbox
+            comment: jiri.jkshop::lang.settings.paypal_use_sandbox_comment
+            span: auto
+            type: switch
+            disabled: true
+            
+        paypal_debug:
+            tab: jiri.jkshop::lang.settings.paypal
+            label: jiri.jkshop::lang.settings.paypal_debug
+            comment: jiri.jkshop::lang.settings.paypal_debug_comment
+            span: auto
+            type: switch   
+            disabled: true
+            
+        paypal_business:
+            tab: jiri.jkshop::lang.settings.paypal
+            label: jiri.jkshop::lang.settings.paypal_business
+            comment: jiri.jkshop::lang.settings.paypal_business_comment
+            span: auto
+            disabled: true
+            
+        paypal_currency_code:
+            tab: jiri.jkshop::lang.settings.paypal
+            label: jiri.jkshop::lang.settings.paypal_currency_code
+            comment: jiri.jkshop::lang.settings.paypal_currency_code_comment
+            default: USD
+            span: auto
+            disabled: true
+            
+        paypal_return_url:
+            tab: jiri.jkshop::lang.settings.paypal
+            label: jiri.jkshop::lang.settings.paypal_return_url
+            comment: jiri.jkshop::lang.settings.paypal_return_url_comment
+            span: auto            
+            disabled: true
+            
+        paypal_help_section:
+            tab: jiri.jkshop::lang.settings.paypal
+            label: jiri.jkshop::lang.settings.help_section
+            type: section
+            
+        paypal_help:
+            tab: jiri.jkshop::lang.settings.paypal
+            type: partial
+            path: $/jiri/jkshop/models/settings/_paypal_help_field.htm           
+            
+        paypal_debug_section:
+            tab: jiri.jkshop::lang.settings.paypal
+            label: jiri.jkshop::lang.settings.help_debug
+            type: section
+            
+        paypal_help_debug:
+            tab: jiri.jkshop::lang.settings.paypal
+            type: partial
+            path: $/jiri/jkshop/models/settings/_paypal_help_debug_field.htm     
+            
+# Stripe
+        stripe_obsolete:
+            tab: jiri.jkshop::lang.settings.stripe
+            label: jiri.jkshop::lang.settings.section_obsolete
+            type: section
+            comment: jiri.jkshop::lang.settings.section_obsolete_comment
+
+        stripe_active:
+            tab: jiri.jkshop::lang.settings.stripe
+            label: jiri.jkshop::lang.settings.active
+            span: full
+            type: switch
+            default: false
+            disabled: true
+            
+        stripe_order_status_before:
+            tab: jiri.jkshop::lang.settings.stripe
+            label: jiri.jkshop::lang.settings.order_status_before
+            span: auto
+            type: relation
+            select: title
+            disabled: true
+            
+        stripe_order_status_after:
+            tab: jiri.jkshop::lang.settings.stripe
+            label: jiri.jkshop::lang.settings.order_status_after
+            span: auto
+            type: relation
+            select: title
+            disabled: true
+            
+        stripe_currency_code:
+            tab: jiri.jkshop::lang.settings.stripe
+            label: jiri.jkshop::lang.settings.stripe_currency_code
+            comment: jiri.jkshop::lang.settings.stripe_currency_code_comment
+            default: USD
+            span: auto
+            disabled: true
+
+        stripe_return_url:
+            tab: jiri.jkshop::lang.settings.stripe
+            label: jiri.jkshop::lang.settings.stripe_return_url
+            comment: jiri.jkshop::lang.settings.stripe_return_url_comment
+            span: auto
+            disabled: true
+            
+        stripe_secret_key:
+            tab: jiri.jkshop::lang.settings.stripe
+            label: jiri.jkshop::lang.settings.stripe_secret_key
+            comment: jiri.jkshop::lang.settings.stripe_secret_key_comment
+            span: auto
+            default: sk_test_BQokikJOvBiI2HlWgH4olfQ2
+            disabled: true
+            
+        stripe_publishable_key:
+            tab: jiri.jkshop::lang.settings.stripe
+            label: jiri.jkshop::lang.settings.stripe_publishable_key
+            comment: jiri.jkshop::lang.settings.stripe_publishable_key_comment
+            span: auto
+            default: pk_test_6pRNASCoBOKtIshFeQd4XMUh
+            disabled: true
+            
+        stripe_help_section:
+            tab: jiri.jkshop::lang.settings.stripe
+            label: jiri.jkshop::lang.settings.help_section
+            type: section
+            
+        stripe_help:
+            tab: jiri.jkshop::lang.settings.stripe
+            type: partial
+            path: $/jiri/jkshop/models/settings/_stripe_help_field.htm           
+            
+        stripe_debug_section:
+            tab: jiri.jkshop::lang.settings.stripe
+            label: jiri.jkshop::lang.settings.help_debug
+            type: section
+            
+        stripe_help_debug:
+            tab: jiri.jkshop::lang.settings.stripe
+            type: partial
+            path: $/jiri/jkshop/models/settings/_stripe_help_debug_field.htm              
+            
+            
+# Invoice template
+        invoice_template_style:
+            tab: jiri.jkshop::lang.settings.invoice_template
+            label: jiri.jkshop::lang.settings.invoice_template_style
+            span: full
+            type: textarea
+            size: giant
+
+        invoice_template_content:
+            tab: jiri.jkshop::lang.settings.invoice_template
+            label: jiri.jkshop::lang.settings.invoice_template_content
+            span: full
+            type: richeditor
+            size: giant
+            
+        invoice_help_section:
+            tab: jiri.jkshop::lang.settings.invoice_template
+            label: jiri.jkshop::lang.settings.invoice_help_section
+            comment: jiri.jkshop::lang.settings.invoice_help_section_comment
+            type: section
+            
+        invoice_help:
+            tab: jiri.jkshop::lang.settings.invoice_template
+            type: partial
+            path: $/jiri/jkshop/models/settings/_invoice_help_field.htm                  

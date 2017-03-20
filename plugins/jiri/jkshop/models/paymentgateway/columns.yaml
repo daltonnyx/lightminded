@@ -1,0 +1,34 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+        
+    gateway_title:
+        label: jiri.jkshop::lang.paymentgateways.gateway_title
+        searchable: true
+        
+    gateway_currency:
+        label: jiri.jkshop::lang.paymentgateways.gateway_currency
+        searchable: true
+
+    gateway:
+        label: jiri.jkshop::lang.paymentgateways.gateway
+        searchable: true
+        
+    active:
+        label: jiri.jkshop::lang.paymentgateways.active
+        type: switch
+
+    orderStatusBefore:
+        label: jiri.jkshop::lang.paymentgateways.orderStatusBefore
+        relation: orderStatusBefore
+        select: title
+
+    orderStatusAfter:
+        label: jiri.jkshop::lang.paymentgateways.orderStatusAfter
+        relation: orderStatusAfter
+        select: title            
+#        
+#    parameters:
+#        label: jiri.jkshop::lang.paymentgateways.parameters  

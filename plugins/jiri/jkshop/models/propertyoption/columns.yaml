@@ -1,0 +1,15 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    
+    title:
+        label: jiri.jkshop::lang.properties.title
+        
+    order_index:
+        label: jiri.jkshop::lang.properties.order
+        clickable: false
+        type: partial
+        path: ~/plugins/jiri/jkshop/models/propertyoption/_reorder.htm 
+        

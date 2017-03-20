@@ -1,0 +1,18 @@
+# ===================================
+# Filter Scope Definitions
+# ===================================
+
+scopes:
+
+    orderstatus:
+        label: jiri.jkshop::lang.orders.orderstatus
+        modelClass: Jiri\JKShop\Models\OrderStatus
+        nameFrom: title
+        conditions: orderstatus_id in (:filtered)
+       
+
+    carrier:
+        label: jiri.jkshop::lang.orders.carrier
+        modelClass: Jiri\JKShop\Models\Carrier
+        nameFrom: title
+        conditions: carrier_id in (:filtered)       

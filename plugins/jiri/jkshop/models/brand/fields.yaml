@@ -1,0 +1,67 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+
+        title:
+            tab: jiri.jkshop::lang.brands.detail
+            label: jiri.jkshop::lang.brands.title
+            span: auto
+
+        slug:
+            tab: jiri.jkshop::lang.brands.detail
+            label: jiri.jkshop::lang.brands.slug
+            span: auto
+            preset:
+                field: title
+                type: slug        
+
+        active:
+            tab: jiri.jkshop::lang.brands.detail
+            label: jiri.jkshop::lang.brands.active
+            type: switch
+            span: auto
+            default: true
+
+        show_in_menu:
+            tab: jiri.jkshop::lang.brands.detail
+            label: jiri.jkshop::lang.brands.show_in_menu
+            type: switch           
+            span: auto
+            default: true
+
+        short_description:
+            tab: jiri.jkshop::lang.brands.detail
+            label: jiri.jkshop::lang.brands.short_description
+            type: richeditor
+            span: auto 
+            
+        description:
+            tab: jiri.jkshop::lang.brands.detail
+            label: jiri.jkshop::lang.brands.description
+            type: richeditor
+            span: auto 
+
+        logo:
+            tab: jiri.jkshop::lang.brands.detail
+            label: jiri.jkshop::lang.brands.logo
+            type: fileupload
+            mode: image      
+            span: auto 
+
+# SEO
+        meta_title:
+            tab: jiri.jkshop::lang.brands.seo
+            label: jiri.jkshop::lang.brands.meta_title
+            
+        meta_keywords:
+            tab: jiri.jkshop::lang.brands.seo
+            comment: jiri.jkshop::lang.brands.meta_keywords_comment
+            label: jiri.jkshop::lang.brands.meta_keywords
+
+        meta_description:
+            tab: jiri.jkshop::lang.brands.seo
+            label: jiri.jkshop::lang.brands.meta_description
+            type: textarea

@@ -1,0 +1,8 @@
+1.0.1: First version of PostExtend
+1.0.2:
+    - Migrate table
+    - add_buybox_to_post.php
+1.0.3:
+    - Add Advertorial Header and Sticky Footer
+    - add_header_to_posts_table.php
+    - add_footer_to_posts_table.php

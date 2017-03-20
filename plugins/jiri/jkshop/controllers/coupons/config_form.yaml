@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: jiri.jkshop::lang.coupons.menu_label_single
+
+# Model Form Field configuration
+form: $/jiri/jkshop/models/coupon/fields.yaml
+
+# Model Class name
+modelClass: Jiri\JKShop\Models\Coupon
+
+# Default redirect location
+defaultRedirect: jiri/jkshop/coupons
+
+# Create page
+create:
+    title: jiri.jkshop::lang.coupons.create
+    redirect: jiri/jkshop/coupons/update/:id
+    redirectClose: jiri/jkshop/coupons
+
+# Update page
+update:
+    title: jiri.jkshop::lang.coupons.update
+    redirect: jiri/jkshop/coupons
+    redirectClose: jiri/jkshop/coupons
+
+# Preview page
+preview:
+    title: jiri.jkshop::lang.coupons.preview

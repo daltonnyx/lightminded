@@ -1,0 +1,74 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    active:
+        label: jiri.jkshop::lang.orderstatuses.active
+        type: switch
+        span: full
+        default: true    
+    
+    title:
+        label: jiri.jkshop::lang.orderstatuses.title
+        span: full
+        
+    color:
+        label: jiri.jkshop::lang.orderstatuses.color
+        span: full
+        type: colorpicker
+        
+    disallow_for_gateway:
+        label: jiri.jkshop::lang.orderstatuses.disallow_for_gateway
+        comment: jiri.jkshop::lang.orderstatuses.disallow_for_gateway_comment
+        type: switch
+        span: full
+        default: false
+        
+    extended_inventory_management:
+        label: jiri.jkshop::lang.orderstatuses.extended_inventory_management
+        comment: jiri.jkshop::lang.orderstatuses.extended_inventory_management_comment
+        type: section
+        
+    qty_decrease:
+        label: jiri.jkshop::lang.orderstatuses.qty_decrease
+        comment: jiri.jkshop::lang.orderstatuses.qty_decrease_comment
+        type: switch
+        span: auto
+        default: false
+        
+    qty_increase_back:
+        label: jiri.jkshop::lang.orderstatuses.qty_increase_back
+        comment: jiri.jkshop::lang.orderstatuses.qty_increase_back_comment
+        type: switch
+        span: auto
+        default: false
+        
+    mail_template_section:
+        label: jiri.jkshop::lang.orderstatuses.mail_template
+        type: section
+        
+    send_email_to_customer:
+        label: jiri.jkshop::lang.orderstatuses.send_email_to_customer_field
+        type: switch
+        span: full
+        default: false         
+        
+    attach_invoice_pdf_to_email:
+        label: jiri.jkshop::lang.orderstatuses.attach_invoice_pdf_to_email_field
+        type: switch
+        span: full
+        default: false          
+        
+    mail_template:
+        label: jiri.jkshop::lang.orderstatuses.mail_template
+        type: relation
+        span: full
+        select: code
+        emptyOption: jiri.jkshop::lang.plugin.please_select
+        
+    mail_template_info:
+        label: jiri.jkshop::lang.orderstatuses.mail_template_info
+        type: partial
+        path: ~/plugins/jiri/jkshop/models/orderstatus/_mail_template_info_field.htm
+        searchable: true        

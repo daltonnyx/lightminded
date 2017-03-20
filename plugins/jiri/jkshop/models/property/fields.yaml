@@ -1,0 +1,29 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    
+    type:
+        label: jiri.jkshop::lang.properties.type
+        type: dropdown
+        span: full
+        
+    title:
+        label: jiri.jkshop::lang.properties.title
+        span: auto
+
+    placeholder:
+        label: jiri.jkshop::lang.properties.placeholder
+        span: auto
+        
+    required:
+        label: jiri.jkshop::lang.properties.required
+        type: switch
+        span: full
+        
+    options:
+        label: jiri.jkshop::lang.properties.options
+        type: partial
+        path: $/jiri/jkshop/models/property/_oprions_relation.htm        
+

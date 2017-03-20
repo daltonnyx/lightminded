@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: jiri.jkshop::lang.carriers.menu_label_single
+
+# Model Form Field configuration
+form: $/jiri/jkshop/models/carrier/fields.yaml
+
+# Model Class name
+modelClass: Jiri\JKShop\Models\Carrier
+
+# Default redirect location
+defaultRedirect: jiri/jkshop/carriers
+
+# Create page
+create:
+    title: jiri.jkshop::lang.carriers.create_carrier
+    redirect: jiri/jkshop/carriers/update/:id
+    redirectClose: jiri/jkshop/carriers
+
+# Update page
+update:
+    title: jiri.jkshop::lang.carriers.edit_carrier
+    redirect: jiri/jkshop/carriers
+    redirectClose: jiri/jkshop/carriers
+
+# Preview page
+preview:
+    title: jiri.jkshop::lang.carriers.preview_carrier

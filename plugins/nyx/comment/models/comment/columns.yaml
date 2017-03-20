@@ -1,0 +1,22 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    title:
+        label: Title
+        searchable: true
+    post_id:
+        label: Post
+        relation: Post
+        select: title
+        searchable: true
+        sortable: false
+    owner:
+        label: User
+        searchable: true
+    email:
+        label: Email
+        searchable: true
+    created_at:
+        label: Posted date

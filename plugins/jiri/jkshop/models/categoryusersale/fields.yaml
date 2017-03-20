@@ -1,0 +1,16 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    sale:
+        label: jiri.jkshop::lang.categories.sales_percent
+        comment: jiri.jkshop::lang.categories.sales_percent_comment
+        type: number
+        
+    user_id:
+        label: jiri.jkshop::lang.categories.customer
+        comment: jiri.jkshop::lang.categories.customer_comment
+        span: full 
+        type: dropdown
+        options: getUserOptions

@@ -1,0 +1,13 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    sale:
+        label: jiri.jkshop::lang.categories.sales_percent
+        searchable: true
+        
+    customer:
+        label: jiri.jkshop::lang.categories.customer
+        type: partial
+        path: ~/plugins/jiri/jkshop/models/categoryusersale/_customer_column.htm

@@ -1,0 +1,14 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    title:
+        label: jiri.jkshop::lang.products.property_option
+        searchable: true
+
+    pivot[price_difference_with_tax]:
+        label: jiri.jkshop::lang.products.price_difference_with_tax
+
+    pivot[title]:
+        label: jiri.jkshop::lang.products.title  

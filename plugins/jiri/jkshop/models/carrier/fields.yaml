@@ -1,0 +1,129 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+        
+# Detail        
+        active:
+            tab: jiri.jkshop::lang.carriers.detail
+            label: jiri.jkshop::lang.carriers.active
+            type: switch
+            span: full
+            default: true
+            
+        title:
+            tab: jiri.jkshop::lang.carriers.detail
+            label: jiri.jkshop::lang.carriers.title
+            span: full   
+            
+        transit_time:
+            tab: jiri.jkshop::lang.carriers.detail
+            label: jiri.jkshop::lang.carriers.transit_time
+            comment: jiri.jkshop::lang.carriers.transit_time_comment
+            span: auto   
+
+        speed_grade:
+            tab: jiri.jkshop::lang.carriers.detail
+            label: jiri.jkshop::lang.carriers.speed_grade
+            comment: jiri.jkshop::lang.carriers.speed_grade_comment
+            span: auto  
+            type: number
+            default: 0
+
+        tracking_url:
+            tab: jiri.jkshop::lang.carriers.detail
+            label: jiri.jkshop::lang.carriers.tracking_url
+            span: full 
+            comment: jiri.jkshop::lang.carriers.tracking_url_comment
+
+        logo:
+            tab: jiri.jkshop::lang.carriers.detail
+            label: jiri.jkshop::lang.carriers.logo
+            type: fileupload
+            mode: image      
+            span: auto
+            
+# Pricing
+
+        free_shipping:
+            tab: jiri.jkshop::lang.carriers.pricing
+            label: jiri.jkshop::lang.carriers.free_shipping
+            type: switch
+            span: full
+            default: false
+
+        tax:
+            tab: jiri.jkshop::lang.carriers.pricing
+            label: jiri.jkshop::lang.carriers.tax
+            type: relation
+            emptyOption: jiri.jkshop::lang.plugin.please_select
+
+        billing:
+            tab: jiri.jkshop::lang.carriers.pricing
+            label: jiri.jkshop::lang.carriers.billing
+            type: dropdown
+            emptyOption: jiri.jkshop::lang.plugin.please_select
+
+        billing_total_price:
+            tab: jiri.jkshop::lang.carriers.pricing
+            label: jiri.jkshop::lang.carriers.billing_total_price
+            type: repeater
+            span: left
+            form:
+                fields:
+                    from:
+                        label: jiri.jkshop::lang.carriers.from
+                        type: number
+                    to:
+                        label: jiri.jkshop::lang.carriers.to
+                        type: number
+                    price:
+                        label: jiri.jkshop::lang.carriers.price
+                        type: number
+                        
+
+        billing_weight:
+            tab: jiri.jkshop::lang.carriers.pricing
+            label: jiri.jkshop::lang.carriers.billing_weight
+            type: repeater
+            span: right
+            form:
+                fields:
+                    from:
+                        label: jiri.jkshop::lang.carriers.billing_weight_from
+                        type: number
+                    to:
+                        label: jiri.jkshop::lang.carriers.billing_weight_to
+                        type: number
+                    price:
+                        label: jiri.jkshop::lang.carriers.price
+                        type: number                        
+
+
+# Size, weight
+
+        maximum_package_width:
+            tab: jiri.jkshop::lang.carriers.size_weight
+            label: jiri.jkshop::lang.carriers.maximum_package_width
+            span: auto  
+            type: number
+
+        maximum_package_height:
+            tab: jiri.jkshop::lang.carriers.size_weight
+            label: jiri.jkshop::lang.carriers.maximum_package_height
+            span: auto  
+            type: number
+
+        maximum_package_depth:
+            tab: jiri.jkshop::lang.carriers.size_weight
+            label: jiri.jkshop::lang.carriers.maximum_package_depth
+            span: auto  
+            type: number
+
+        maximum_package_weight:
+            tab: jiri.jkshop::lang.carriers.size_weight
+            label: jiri.jkshop::lang.carriers.maximum_package_weight
+            span: auto  
+            type: number

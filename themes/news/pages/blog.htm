@@ -1,0 +1,30 @@
+title = "Blog"
+url = "/blog"
+layout = "default"
+is_hidden = 0
+==
+<?php
+use RainLab\Blog\Models\Post;
+
+function onStart(){
+    $this['posts'] = Post::isPublished()
+					    ->orderBy('published_at', 'desc')
+					    ->take(5)
+					    ->with('categories')
+					    ->get();
+}
+?>
+==
+<div class="content">
+    <div class="thumb-layout thumb-layout-page">
+     {% for post in posts %}
+     <a href="post/{{ post.slug }}">
+        <img class="preload-image" data-original="{{ post.featured_images.first.getPath() }}" alt="img">
+        <strong>{{ post.title }}</strong>
+        <em>{{ post.excerpt }}</em>
+    </a>        
+     {% endfor %}
+    </div>
+    <div class="decoration"></div>
+    <a href="#" class="load-more-thumbs button button-fullscreen button-green full-bottom">Load More</a>
+</div>

@@ -1,0 +1,27 @@
+<div class="comments-section">
+    <h3>Comments</h3>
+    <div class="comment-form">
+        {% partial 'commentForm::post_form' %} 
+    </div>
+{% if commentForm.comments.count %}
+    <ul class="comment-list">
+    {% for comment in commentForm.comments %}
+        <li class="comment-item">
+            <div class="comment-avatar">
+                <img alt="{{ comment.title }}" class="comment-img" src="{{ comment.avatar.getThumb(100,100, {'mode': 'crop'}) }}" />
+            </div>
+            <div class="comment-content">
+                <div class="comment-header">
+                    <h5 class="comment-owner"><a href="mailto:{{comment.email}}">{{ comment.owner }}</a></h5>
+                    <span class="comment-date">{{ comment.created_at }}</span>
+                </div>
+                <div class="comment-message">
+                    {{ comment.message }}
+                </div>
+            </div>
+        </li>
+    {% endfor %}
+    </ul>
+{% endif %}
+</div>
+

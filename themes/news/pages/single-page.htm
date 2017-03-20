@@ -1,0 +1,67 @@
+title = "Single Page"
+url = "/post/:slug"
+layout = "default"
+is_hidden = 0
+
+[commentForm]
+layout = "layout_a"
+==
+<?php
+use RainLab\Blog\Models\Post;
+
+function onStart(){
+    $slug = $this->param('slug');
+    $this['post'] = Post::where('slug', '=', $slug)
+                            ->isPublished()
+                            ->with('categories')
+                            ->first();
+    if( !$this['post'] )
+        return Redirect::to('/404');
+        
+    $this->page->title = $this['post']->title;
+}
+?>
+==
+{% if(post.header_enabled) %}
+<div class="advertorial-header" data-mobile="{{ post.header_mobile_only }}">
+{{ post.header|raw }}
+</div>
+{% endif %}
+<div class="content">
+    <h3 class="half-bottom">
+        {{ post.title }}
+    </h3>
+    <p class="news-article-large-text no-bottom">
+        <img src="{{ post.featured_images.first().getPath() }}" alt="img">
+        <em>Posted by <a href="#">Enabled</a>, on <a href="#">{{ post.published_at|date("F jS, Y") }}</a></em>
+        <em>in 
+        {% for category in post.categories %}
+            <a href="#">{{ category.name }}</a>
+        {% endfor %}   
+        </em>
+    </p>
+</div>
+
+<div class="content" id="article">
+{{ post.content|raw }}
+</div>
+<div class="content buybox-section">
+{{ post.buybox | raw }}
+</div>
+<div class="news-article-share full-bottom">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http://lightminded.co/post/{{ post.slug }}"><i class="facebook-color fa fa-facebook"></i></a>
+    <a href="https://twitter.com/home?status={{ post.title }}"><i class="twitter-color fa fa-twitter"></i></a>
+    <a href="https://plus.google.com/share?url=http://lightminded.co/post/{{ post.slug }}"><i class="google-color fa fa-google-plus"></i></a>
+    <a href="whatsapp://send?text={{ post.title }}" data-action="share/whatsapp/share"><i class="whatsapp-color fa fa-whatsapp"></i></a>
+    <a href="mailto:?&subject={{ post.title }}&body="><i class="mail-color fa fa-envelope-o"></i></a>
+    <div class="clear"></div>
+</div>
+<div class="content">
+{% component 'commentForm' %}
+</div>
+
+{% if(post.footer_enabled) %}
+<div class="sticky-footer" data-anchor="{{post.footer_show_position}}" data-mobile="{{ post.footer_mobile_only }}">
+{{ post.sticky_footer|raw }}
+</div>
+{% endif %}

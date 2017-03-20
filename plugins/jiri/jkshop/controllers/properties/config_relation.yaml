@@ -1,0 +1,15 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+options:
+    label: jiri.jkshop::lang.properties.option
+    view:
+        list: $/jiri/jkshop/models/propertyoption/columns.yaml
+        toolbarButtons: create|delete
+        defaultSort: 
+            column: order_index
+            direction: asc
+    manage:
+        form: $/jiri/jkshop/models/propertyoption/fields.yaml
+        recordsPerPage: 10          

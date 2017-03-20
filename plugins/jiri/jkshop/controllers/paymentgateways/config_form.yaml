@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: jiri.jkshop::lang.paymentgateways.menu_label_single
+
+# Model Form Field configuration
+form: $/jiri/jkshop/models/paymentgateway/fields.yaml
+
+# Model Class name
+modelClass: Jiri\JKShop\Models\PaymentGateway
+
+# Default redirect location
+defaultRedirect: jiri/jkshop/paymentgateways
+
+# Create page
+create:
+    title: jiri.jkshop::lang.paymentgateways.create
+    redirect: jiri/jkshop/paymentgateways/update/:id
+    redirectClose: jiri/jkshop/paymentgateways
+
+# Update page
+update:
+    title: jiri.jkshop::lang.paymentgateways.edit
+    redirect: jiri/jkshop/paymentgateways
+    redirectClose: jiri/jkshop/paymentgateways
+
+# Preview page
+preview:
+    title: jiri.jkshop::lang.paymentgateways.preview

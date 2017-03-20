@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Comment
+
+# Model Form Field configuration
+form: $/nyx/comment/models/comment/fields.yaml
+
+# Model Class name
+modelClass: Nyx\Comment\Models\Comment
+
+# Default redirect location
+defaultRedirect: nyx/comment/comment
+
+# Create page
+create:
+    title: Create Comment
+    redirect: nyx/comment/comment/update/:id
+    redirectClose: nyx/comment/comment
+
+# Update page
+update:
+    title: Edit Comment
+    redirect: nyx/comment/comment
+    redirectClose: nyx/comment/comment
+
+# Preview page
+preview:
+    title: Preview Comment

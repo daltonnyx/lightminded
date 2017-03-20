@@ -1,0 +1,45 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    code:
+        label: jiri.jkshop::lang.coupons.code
+        searchable: true
+        
+    active:
+        label: jiri.jkshop::lang.coupons.active
+        type: switch
+        
+    valid_from:
+        label: jiri.jkshop::lang.coupons.valid_from
+        type: datetime
+
+    valid_to:
+        label: jiri.jkshop::lang.coupons.valid_to
+        type: datetime
+
+    count:
+        label: jiri.jkshop::lang.coupons.count
+        type: number
+        searchable: true
+        
+    used_count:
+        label: jiri.jkshop::lang.coupons.used_count
+        type: number
+        searchable: true
+        
+    minimum_value_basket:
+        label: jiri.jkshop::lang.coupons.minimum_value_basket
+        type: number
+        searchable: true
+        
+    value:
+        label: jiri.jkshop::lang.coupons.value
+        searchable: false
+        type: partial
+        path: ~/plugins/jiri/jkshop/models/coupon/_value_column.htm
+        
+    created_at:
+        label: jiri.jkshop::lang.coupons.created_at
+        type: datetime        

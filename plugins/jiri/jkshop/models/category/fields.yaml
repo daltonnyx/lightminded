@@ -1,0 +1,75 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+
+        title:
+            tab: jiri.jkshop::lang.categories.detail
+            label: jiri.jkshop::lang.categories.title
+            span: auto
+
+        slug:
+            tab: jiri.jkshop::lang.categories.detail
+            label: jiri.jkshop::lang.categories.slug
+            span: auto
+            preset:
+                field: title
+                type: slug        
+
+        active:
+            tab: jiri.jkshop::lang.categories.detail
+            label: jiri.jkshop::lang.categories.active
+            type: switch
+            span: auto
+            default: true
+
+        show_in_menu:
+            tab: jiri.jkshop::lang.categories.detail
+            label: jiri.jkshop::lang.categories.show_in_menu
+            type: switch           
+            span: auto
+            default: true
+
+        description:
+            tab: jiri.jkshop::lang.categories.detail
+            label: jiri.jkshop::lang.categories.description
+            type: richeditor
+            span: auto 
+
+        thumbnails:
+            tab: jiri.jkshop::lang.categories.detail
+            label: jiri.jkshop::lang.categories.thumbnails
+            type: fileupload
+            mode: image      
+            span: auto 
+
+        parent:
+            tab: jiri.jkshop::lang.categories.detail
+            label: jiri.jkshop::lang.categories.parent
+            type: relation
+            emptyOption: -- Select parent --
+            select: title      
+            
+# SEO
+        meta_title:
+            tab: jiri.jkshop::lang.categories.seo
+            label: jiri.jkshop::lang.categories.meta_title
+            
+        meta_keywords:
+            tab: jiri.jkshop::lang.categories.seo
+            comment: jiri.jkshop::lang.categories.meta_keywords_comment
+            label: jiri.jkshop::lang.categories.meta_keywords
+
+        meta_description:
+            tab: jiri.jkshop::lang.categories.seo
+            label: jiri.jkshop::lang.categories.meta_description
+            type: textarea
+            
+# Sales
+        sales:
+            tab: jiri.jkshop::lang.categories.sales
+            label: jiri.jkshop::lang.categories.sales
+            type: partial
+            path: ~/plugins/jiri/jkshop/models/category/_sales_relation.htm        

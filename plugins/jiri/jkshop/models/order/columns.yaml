@@ -1,0 +1,71 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: jiri.jkshop::lang.orders.id
+        searchable: true
+
+    is_last_name:
+        label: jiri.jkshop::lang.orders.customer
+        type: partial
+        path: ~/plugins/jiri/jkshop/models/order/_customer_column.htm
+        searchable: true
+        
+    contact_email:
+        label: jiri.jkshop::lang.orders.contact_email
+        invisible: true
+        searchable: true
+        
+    contact_phone:
+        label: jiri.jkshop::lang.orders.contact_phone
+        invisible: true
+        searchable: true        
+
+    is_last_name:
+        label: jiri.jkshop::lang.orders.is_last_name
+        invisible: true
+        searchable: true
+        
+    is_first_name:
+        label: jiri.jkshop::lang.orders.is_first_name
+        invisible: true
+        searchable: true
+        
+    is_address:
+        label: jiri.jkshop::lang.orders.is_address
+        invisible: true
+        searchable: true        
+        
+    is_postcode:
+        label: jiri.jkshop::lang.orders.is_postcode
+        invisible: true
+        searchable: true 
+        
+    is_city:
+        label: jiri.jkshop::lang.orders.is_city
+        invisible: true
+        searchable: true 
+        
+    is_country:
+        label: jiri.jkshop::lang.orders.is_country
+        invisible: true
+        searchable: true                 
+        
+    carrier:
+        label: jiri.jkshop::lang.orders.carrier
+        relation: carrier
+        select: title
+        
+    orderstatus_id:
+        label: jiri.jkshop::lang.orders.orderstatus
+        type: partial
+        path: ~/plugins/jiri/jkshop/models/order/_orderstatus_column.htm        
+        
+    paid_date:
+        label: jiri.jkshop::lang.orders.paid_date
+        type: datetime
+
+    total_price:
+        label: jiri.jkshop::lang.orders.total_price

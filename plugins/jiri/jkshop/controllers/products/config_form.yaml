@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: jiri.jkshop::lang.products.menu_label_single
+
+# Model Form Field configuration
+form: $/jiri/jkshop/models/product/fields.yaml
+
+# Model Class name
+modelClass: Jiri\JKShop\Models\Product
+
+# Default redirect location
+defaultRedirect: jiri/jkshop/products
+
+# Create page
+create:
+    title: jiri.jkshop::lang.products.create
+    redirect: jiri/jkshop/products/update/:id
+    redirectClose: jiri/jkshop/products
+
+# Update page
+update:
+    title: jiri.jkshop::lang.products.edit
+    redirect: jiri/jkshop/products
+    redirectClose: jiri/jkshop/products
+
+# Preview page
+preview:
+    title: jiri.jkshop::lang.products.preview

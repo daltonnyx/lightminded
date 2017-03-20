@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: jiri.jkshop::lang.orders.menu_label_single
+
+# Model Form Field configuration
+form: $/jiri/jkshop/models/order/fields.yaml
+
+# Model Class name
+modelClass: Jiri\JKShop\Models\Order
+
+# Default redirect location
+defaultRedirect: jiri/jkshop/orders
+
+# Create page
+create:
+    title: jiri.jkshop::lang.orders.create_order
+    redirect: jiri/jkshop/orders/update/:id
+    redirectClose: jiri/jkshop/orders
+
+# Update page
+update:
+    title: jiri.jkshop::lang.orders.edit_order
+    redirect: jiri/jkshop/orders
+    redirectClose: jiri/jkshop/orders
+
+# Preview page
+preview:
+    title: jiri.jkshop::lang.orders.preview_order
